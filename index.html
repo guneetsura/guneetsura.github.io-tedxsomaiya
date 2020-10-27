@@ -39,6 +39,14 @@
     position: auto;
     margin-bottom: 50px;
   }
+  .card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 3;
+  }
+  @include media-breakpoint-only(sm) {
+    column-count: 1;
+  }
+}
   .card-text{
     font-family: -apple-system;
     font-style: italic;
@@ -221,7 +229,7 @@ footer p {
 <div class="section" id="speakers">
 <div class="container" id="speaker-container">
 <div class="row">
-  <div class="col-md-12 col-sm-12">
+  <div class="col-md-12 col-sm-12 card-column">
   <div class="section-title text-center">
     <h1 id="sp">Our Speakers</h1>          
     <center>
